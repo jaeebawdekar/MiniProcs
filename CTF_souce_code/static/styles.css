@@ -1,0 +1,61 @@
+
+
+body {
+    background-color: #000;
+    color: #00ff00;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #000;
+}
+
+h1 {
+    color: #00ff00;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.text-block {
+    background-color: #333; 
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.text-block p {
+    color: #00ff00; 
+    font-size: 1.2em;
+    word-wrap: break-word; 
+}
+
+.animation {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+}
+
+
