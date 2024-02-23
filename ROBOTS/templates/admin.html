@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+            margin: auto;
+        }
+
+        h1 {
+            color: #1a237e;
+        }
+
+        p {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input {
+            padding: 5px;
+            margin-bottom: 10px;
+            width: 200px;
+        }
+
+        button {
+            background-color: #1a237e;
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3949ab;
+        }
+
+        /* Additional styles as needed */
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Admin Page</h1>
+    <p>This admin page is secured. </p>
+    <p>About the Company: GuardianShield Solutions - Fortifying Your Digital Frontiers. Unrivaled expertise in cybersecurity</p>
+    <p>Founder: John Ray - A Cybersecurity specialist with expertise in threat mitigation and defense strategies</p>
+    <form action="/admin/login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+    
+</body>
+</html>
