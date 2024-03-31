@@ -22,7 +22,7 @@ async function generateID(req, res, next) {
 async function redirectbyID(req,res){
     const generatedID = req.params.id;
     try {
-        const result = await URL.findOne({ shortID: generatedID }); // await the query result
+        const result = await URL.findOne({ shortID: generatedID }); 
         if (!result) {
             return res.status(404).json({ "err": "URL not found" });
         }
